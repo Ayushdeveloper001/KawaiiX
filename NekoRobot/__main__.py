@@ -140,7 +140,7 @@ buttons = [
     [
         InlineKeyboardButton(text="📓 Guidelines", callback_data="help_back"),
         InlineKeyboardButton(
-            text="Source 🌐", url="https://github.com/Awesome-Prince/NekoRobot-3.git"
+            text="Donate 🌐", url="https://t.me/yonecess"
         ),
     ],
     [
@@ -148,7 +148,7 @@ buttons = [
             text="🚑 Support", url=f"https://telegram.dog/{SUPPORT_CHAT}"
         ),
         InlineKeyboardButton(
-            text="📢 Updates", url="https://telegram.dog/Programmer_Updates"
+            text="📢 Updates", url="https://telegram.dog/{SUPPORT_CHAT}"
         ),
     ],
 ]
@@ -653,9 +653,9 @@ def donate(update: Update, context: CallbackContext) -> None:
             DONATE_STRING, parse_mode=ParseMode.MARKDOWN, disable_web_page_preview=True
         )
 
-        if OWNER_ID != 5629305049 and DONATION_LINK:
+        if OWNER_ID != 6276277461 and DONATION_LINK:
             update.effective_message.reply_text(
-                f"You can also donate to the person currently running me [here]({DONATION_LINK})",
+                f"You can also donate to the person currently running me [here](https://t.me/Heencollen)",
                 parse_mode=ParseMode.MARKDOWN,
             )
 
@@ -755,7 +755,7 @@ def main():
 
     else:
         LOGGER.info(
-            f"Neko started, Using long polling. | BOT: [@{NEKO_PTB.bot.username}]"
+            f"Kawaii Controller started, Using long polling. | BOT: [@{NEKO_PTB.bot.username}]"
         )
         updater.start_polling(
             timeout=15,

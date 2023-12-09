@@ -9,7 +9,7 @@
          "manager",
          "NekoRobot"
       ],   
-   "repository": "https://github.com/Awesome-Prince/NekoRobot-3",
+   "repository": "https://github.com/ayushdeveloper001/KawaiiControl_bot",
    "addons": [
       {
          "options": {
@@ -67,7 +67,7 @@
       "OWNER_ID": {
          "description": "Your user ID as an integer.",
          "required": true,
-         "value": "5629305049"
+         "value": "6276277461"
       },
       "OWNER_USERNAME": {
          "description": "Your username without the @",
@@ -91,7 +91,7 @@
       "DEV_USERS": {
          "description": "ID of users who are Devs of your bot (can use /py etc.). If you are a noob and would come and bother Saitama support then keep the current ID's here at they are and add yours.",
          "required": true,
-         "value": "5629305049"
+         "value": "6276277461"
       },
       "sw_api": {
          "description": "Spamwatch API Token, Get one from @SpamWatchBot.",

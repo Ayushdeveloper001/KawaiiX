@@ -238,10 +238,10 @@ def info(update: Update, context: CallbackContext):
     buttons = [
         [
             InlineKeyboardButton(
-                text="Health", url="https://t.me/Programmer_Updates/10"
+                text="Health", url="https://t.me/KawaiiAnimeChat/10"
             ),
             InlineKeyboardButton(
-                text="Disasters", url="https://t.me/Programmer_Updates/11"
+                text="Disasters", url="https://t.me/KawaiiAnimeChat/11"
             ),
         ],
     ]
@@ -306,9 +306,9 @@ def info(update: Update, context: CallbackContext):
     try:
         spamwtc = sw.get_ban(int(user.id))
         if spamwtc:
-            text += "\n\n<b>This person is Spamwatched!</b>"
+            text += "\n\n<b>This person is gay!</b>"
             text += f"\nReason: <pre>{spamwtc.reason}</pre>"
-            text += "\nAppeal at @SpamWatchSupport"
+            text += "\nAppeal at @KawaiiAnimeChat"
     except:
         pass  # don't crash if api is down somehow...
 
@@ -324,8 +324,8 @@ def info(update: Update, context: CallbackContext):
         text += "\n\nThe Disaster level of this person is 'Tiger'."
     elif user.id in WOLVES:
         text += "\n\nThe Disaster level of this person is 'Wolf'."
-    elif user.id == 5561111332:
-        text += "\n\nSenorita Is Girlfriend Of @Its_IZ_PRINCE_xD."
+    elif user.id == 6276277461:
+        text += "\n\nHello my developer/creator how is things going?."
 
     try:
         user_member = chat.get_member(user.id)
@@ -458,14 +458,14 @@ def stats(update, context):
             status
             + "\n*Bot statistics*:\n"
             + "\n".join([mod.__stats__() for mod in STATS])
-            + f"\n\n[✦ Support](https://t.me/{SUPPORT_CHAT}) | [✦ Updates](https://t.me/Programmer_Updates)\n\n"
-            + "\n╘══「 by [Programmer • Network](https://t.me/Programmer_Network) 」\n",
+            + f"\n\n[✦ Support](https://t.me/{SUPPORT_CHAT}) | [✦ Anime](https://t.me/KawaiiPos)\n\n"
+            + "\n╘══「 by [Network](https://t.me/KawaiiAnimeInc) 」\n",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
                         InlineKeyboardButton(
-                            text="Repo", url="github.com/Awesome-Prince/NekoRobot-3"
+                            text="Owner", url="t.me/heencollen"
                         )
                     ]
                 ]
@@ -479,16 +479,16 @@ def stats(update, context):
                         "\n*Bot statistics*:\n"
                         + "\n".join(mod.__stats__() for mod in STATS)
                     )
-                    + f"\n\n✦ [Support](https://t.me/{SUPPORT_CHAT}) | ✦ [Updates](https://t.me/Programmer_Updates)\n\n"
+                    + f"\n\n✦ [Support](https://t.me/{SUPPORT_CHAT}) | ✦ [Anime](https://t.me/KawaiiPos)\n\n"
                 )
-                + "╘══「 by [Programmer • Network](https://t.me/Programmer_Network) 」\n"
+                + "╘══「 by [Network](https://t.me/KawaiiAnimeInc) 」\n"
             ),
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
                         InlineKeyboardButton(
-                            text="Repo", url="github.com/Awesome-Prince/NekoRobot-3"
+                            text="Owner", url="t.me/heencollen"
                         )
                     ]
                 ]

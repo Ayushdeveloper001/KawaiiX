@@ -51,7 +51,7 @@ async def _(event):
     lan = lan.strip()
     try:
         tts = gTTS(text, tld="com", lang=lan)
-        tts.save("Neko.mp3")
+        tts.save("KawaiiX.mp3")
     except AssertionError:
         await event.reply(
             "The text is empty.\n"
@@ -68,11 +68,11 @@ async def _(event):
     except gTTSError:
         await event.reply("Error in Google Text-to-Speech API request !")
         return
-    with open("Neko.mp3", "r"):
+    with open("KawaiiX.mp3", "r"):
         await tbot.send_file(
-            event.chat_id, "Neko.mp3", voice_note=True, reply_to=reply_to_id
+            event.chat_id, "KawaiiX.mp3", voice_note=True, reply_to=reply_to_id
         )
-        os.remove("Neko.mp3")
+        os.remove("KawaiiX.mp3")
 
 
 # ------ MODULE IS UNDER TESTING ------#

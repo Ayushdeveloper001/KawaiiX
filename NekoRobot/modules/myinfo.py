@@ -28,7 +28,7 @@ async def proboyx(event):
     on = await bot.send_file(
         event.chat_id,
         file=file2,
-        caption=f"♡ Hey {betsy}, I'm Neko\n♡ I'm Created By [Prince](tg://user?id=1732814103)\n♡ Click The Button Below To Get Your Info",
+        caption=f"♡ Hey {betsy}, I'm KawaiiX\n♡ I'm Created By [Ayush](https://t.me/yonecess\n♡ Click The Button Below To Get Your Info",
         buttons=button,
     )
 
@@ -65,7 +65,7 @@ async def callback_query_handler(event):
     try:
         boy = event.sender_id
         PRO = await bot.get_entity(boy)
-        NEKO = "YOUR DETAILS BY NEKO \n\n"
+        NEKO = "YOUR DETAILS BY Kawaii X \n\n"
         NEKO += f"FIRST NAME : {PRO.first_name} \n"
         NEKO += f"LAST NAME : {PRO.last_name}\n"
         NEKO += f"YOU BOT : {PRO.bot} \n"

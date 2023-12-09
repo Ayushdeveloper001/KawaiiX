@@ -34,23 +34,23 @@ PHOTO = "https://telegra.ph/file/70061cba45ee824dad6f6.jpg"
 @register(pattern=("/repo"))
 async def awake(event):
     NEKO = """
-         We Are So Happy To Announce That We Have Public Our NekoRobot Repo. ✨🥀
+         Are you a bot creator? looking for Kawaii X Repo? sorry but after 10k members at @KawaiiAnimeChat. ✨🥀
 ➖➖➖➖➖➖➖➖➖➖➖➖➖
-「@NekoCuteBot」
+「@KawaiiXbot」
 ➖➖➖➖➖➖➖➖➖➖➖➖➖
-Here is the Repo Deploy your Own NekoRobot.
-⚜️Repo ➤ https://github.com/Awesome-Prince/NekoRobot-3.git
+Join the group and get us 10k members to get this awesome bot.
+⚜️Group ➤ https://t.me/KawaiiAnimeChat
 ➖➖➖➖➖➖➖➖➖➖➖➖➖
-🔰 Thanks for your support 
-It's Fully stable Repo so you can deploy and make own Bot.
+🔰 Complete the quest my guy and have this awesome bot 
+It's Fully stable bot so you can deploy and make own Bot.
 ──────────────────
-Powered By:- @Besties_XD
+Powered By:- @KawaiiAnimeChat
 """
 
     BUTTON = [
         [
-            Button.url("📢 Repository", "https://github.com/Awesome-Prince/NekoRobot-3"),
-            Button.url("💻 Collaborators", "https://telegra.ph/Neko-X-05-23"),
+            Button.url("📢 Support", "https://t.me/KawaiiAnimeChat"),
+            Button.url("💻 Donation", "https://t.me/HeenCollen"),
         ]
     ]
     await tbot.send_file(event.chat_id, PHOTO, caption=NEKO, buttons=BUTTON)

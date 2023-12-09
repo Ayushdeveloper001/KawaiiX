@@ -75,16 +75,16 @@ def inlinequery(update: Update, _) -> None:
                 "keyboard": ".spb ",
             },
             {
-                "title": "Account info on Neko X",
+                "title": "Account info on Kawaii X",
                 "description": "Look up a Telegram account in Miku database",
-                "message_text": "Click the button below to look up a person in Neko X database using their Telegram ID",
+                "message_text": "Click the button below to look up a person in Kawaii X database using their Telegram ID",
                 "thumb_urL": "https://telegra.ph/file/0bf1b29555518a0d45948.jpg",
                 "keyboard": ".info ",
             },
             {
                 "title": "About",
-                "description": "Know about Neko X",
-                "message_text": "Click the button below to get to know about Neko X.",
+                "description": "Know about Kawaii X",
+                "message_text": "Click the button below to get to know about Kawaii X.",
                 "thumb_urL": "https://telegra.ph/file/0bf1b29555518a0d45948.jpg",
                 "keyboard": ".about ",
             },
@@ -160,7 +160,7 @@ def inlineinfo(query: str, update: Update, context: CallbackContext) -> None:
         text += f"\n\nThis person is my owner"
         nation_level_present = True
     elif user.id in DEV_USERS:
-        text += f"\n\nThis Person is a part Developer Team of Saber 剣"
+        text += f"\n\nThis Person is a part Developer Team of @KawaiiAnimeChat"
         nation_level_present = True
     elif user.id in DRAGONS:
         text += f"\n\nThe Power level of this person is Royal"
@@ -195,7 +195,7 @@ def inlineinfo(query: str, update: Update, context: CallbackContext) -> None:
         [
             [
                 InlineKeyboardButton(
-                    text="Report Error", url="https://t.me/Besties_XD"
+                    text="Report Error tag admins with ss of errors", url="https://t.me/KawaiiAnimeChat"
                 ),
                 InlineKeyboardButton(
                     text="Search again",
@@ -233,12 +233,12 @@ def about(query: str, update: Update, context: CallbackContext) -> None:
     user = context.bot.get_chat(user_id)
     sql.update_user(user.id, user.username)
     about_text = f"""
-    [Neko X](https://t.me/NekoCuteBot)\n*Bot State:* `Alive`\n*Python:* `{python_version()}`\n*Pyrogram:* `{pyrover}`\n*Platform:* `{sys.platform}`\n*python-telegram-bot:* `v{str(__version__)}`
+    [Kawaii X](https://t.me/KawaiiAnimeChat)\n*Bot State:* `Alive`\n*Python:* `{python_version()}`\n*Pyrogram:* `{pyrover}`\n*Platform:* `{sys.platform}`\n*python-telegram-bot:* `v{str(__version__)}`
     """
     kb = InlineKeyboardMarkup(
         [
             [
-                InlineKeyboardButton(text="Support", url="https://t.me/Besties_XD"),
+                InlineKeyboardButton(text="Support", url="https://t.me/KawaiiAnimeChat"),
                 InlineKeyboardButton(
                     text="Sys Stats",
                     callback_data="pingCB",
@@ -326,7 +326,7 @@ def spb(query: str, update: Update, context: CallbackContext) -> None:
         [
             [
                 InlineKeyboardButton(
-                    text="Report Error", url="https://t.me/Besties_XD"
+                    text="Report Error Tag admin with proper ss of errors", url="https://t.me/KawaiiAnimeChat"
                 ),
                 InlineKeyboardButton(
                     text="Search again",
@@ -477,7 +477,7 @@ def media_query(query: str, update: Update, context: CallbackContext) -> None:
                 [
                     InlineKeyboardButton(
                         text="Report error",
-                        url="https://t.me/Besties_XD",
+                        url="https://t.me/KawaiiAnimeChat",
                     ),
                     InlineKeyboardButton(
                         text="Search again",

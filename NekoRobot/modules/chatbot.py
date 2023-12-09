@@ -47,7 +47,7 @@ def kukirm(update: Update, context: CallbackContext) -> str:
             )
         else:
             update.effective_message.edit_text(
-                f"Hey Darling Neko Chatbot disable by {mention_html(user.id, user.first_name)}.",
+                f"Hey Darling Kawaii Chatbot disable by {mention_html(user.id, user.first_name)}.",
                 parse_mode=ParseMode.HTML,
             )
 
@@ -71,7 +71,7 @@ def kukiadd(update: Update, context: CallbackContext) -> str:
             )
         else:
             update.effective_message.edit_text(
-                f"Hey Darling Neko Chatbot enable by {mention_html(user.id, user.first_name)}.",
+                f"Hey Darling Kawaii Chatbot enable by {mention_html(user.id, user.first_name)}.",
                 parse_mode=ParseMode.HTML,
             )
 
@@ -133,7 +133,7 @@ def chatbot(update: Update, context: CallbackContext):
 
 def list_all_chats(update: Update, context: CallbackContext):
     chats = sql.get_all_kuki_chats()
-    text = "<b>Neko Enabled Chats</b>\n"
+    text = "<b>Kawaii Controller Enabled Chats</b>\n"
     for chat in chats:
         try:
             x = context.bot.get_chat(int(*chat))

@@ -67,18 +67,18 @@ async def alive_function(answers):
     bot_state = "Dead" if not await app.get_me() else "Alive"
     # ubot_state = 'Dead' if not await app2.get_me() else 'Alive'
     buttons.add(
-        InlineKeyboardButton("Main Bot", url="https://t.me/NekoCuteBot"),
+        InlineKeyboardButton("Main Bot", url="t.me/KawaiiXbot"),
         InlineKeyboardButton("Go Inline", switch_inline_query_current_chat=""),
     )
 
     msg = f"""
-**[Neko X](https://t.me/NekoCuteBot):**
+**[Kawaii X](https://t.me/KawaiiXbot):**
 **MainBot:** `{bot_state}`
 **UserBot:** `Alive`
 **Python:** `3.9`
 **Pyrogram:** `{pyrover}`
 **Platform:** `{sys.platform}`
-**Profiles:** [BOT](t.me/NekoCuteBot) | [OWNER](t.me/DarlingPrince)
+**Profiles:** [BOT](t.me/KawaiiXbot) | [OWNER](t.me/HeenCollen)
 """
 
     answers.append(
