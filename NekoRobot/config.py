@@ -14,24 +14,24 @@ class Config(object):
     # REQUIRED
     # Login to https://my.telegram.org and fill in these slots with the details given by it
 
-    API_ID = 1234567  # integer value, dont use ""
-    API_HASH = "123458494"
-    TOKEN = ""  # This var used to be API_KEY but it is now TOKEN, adjust accordingly.
-    STRING_SESSION = "12345abc6"
-    OWNER_ID = 1732814103  # If you dont know, run the bot and do /id in your private chat with it, also an integer
-    OWNER_USERNAME = "Awesome_Prince"
-    SUPPORT_CHAT = "Besties_XD"  # Your own group for support, do not add the @
+    API_ID = 28397760  # integer value, dont use ""
+    API_HASH = "c5850a7b1efe26f5835a1c219e65ed54"
+    TOKEN = "6462054328:AAE0wg7qHMAzvyXb7NhSwrNI7WIM7EhQw0o"  # This var used to be API_KEY but it is now TOKEN, adjust accordingly.
+    STRING_SESSION = ""
+    OWNER_ID = 644598176  # If you dont know, run the bot and do /id in your private chat with it, also an integer
+    OWNER_USERNAME = "HeenCollen"
+    SUPPORT_CHAT = "KawaiiAnimeChat"  # Your own group for support, do not add the @
     JOIN_LOGGER = (
-        -1001739802989
+        -1002058516246
     )  # Prints any new group the bot is added to, prints just the name and ID.
     EVENT_LOGS = (
-        -1001739802989
+        -1002058516246
     )  # Prints information like gbans, sudo promotes, AI enabled disable states that may help in debugging and shit
 
     # RECOMMENDED
     SQLALCHEMY_DATABASE_URI = ""  # needed for any database modules
     DB_URL = ""
-    REDIS_URL = ""
+    REDIS_URL = "redis-13431.c305.ap-south-1-1.ec2.cloud.redislabs.com:13431"
     LOAD = []
     NO_LOAD = ["rss", "cleaner", "connection", "math"]
     WEBHOOK = False
@@ -61,9 +61,9 @@ class Config(object):
     BAN_STICKER = ""  # banhammer marie sticker id, the bot will send this sticker before banning or kicking a user in chat.
     ALLOW_EXCL = True  # Allow ! commands as well as / (Leave this to true so that blacklist can work)
     CASH_API_KEY = (
-        "awoo"  # Get your API key from https://www.alphavantage.co/support/#api-key
+        "VXRGGYORNRVWG9HG"  # Get your API key from https://www.alphavantage.co/support/#api-key
     )
-    TIME_API_KEY = "awoo"  # Get your API key from https://timezonedb.com/api
+    TIME_API_KEY = "QO71WZHGIT4V"  # Get your API key from https://timezonedb.com/api
     WALL_API = (
         "awoo"  # For wallpapers, get one from https://wall.alphacoders.com/api.php
     )
